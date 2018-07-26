@@ -1,0 +1,142 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        applicationId "com.example.juan.pruebaaplicaciones"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.compileSdkVersion
+        versionCode 76
+        versionName "2.5.6.2"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
+}
+
+repositories {
+    jcenter()
+    flatDir {
+        dirs 'libs'
+    }
+    maven { url 'https://jitpack.io' }
+    maven { url "https://adcolony.bintray.com/AdColony" }
+    maven { url "https://dl.bintray.com/vdopiacorp/sdk" }
+    maven { url "http://repository.youappi.com/repository/release" }
+    // If you're using a version of Gradle greater than or equal to 4.1, you must use:
+    google()
+
+    // If you're using a version of Gradle lower than 4.1, you must use:
+    // maven { url 'https://maven.google.com' }
+
+}
+
+
+dependencies {
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    implementation "com.android.support:support-annotations:$rootProject.ext.supportLibraryVersion"
+    implementation "com.android.support:appcompat-v7:$rootProject.ext.supportLibraryVersion"
+    implementation "com.android.support:support-v4:$rootProject.ext.supportLibraryVersion"
+    implementation "com.android.support:palette-v7:$rootProject.ext.supportLibraryVersion"
+    implementation "com.android.support:design:$rootProject.ext.supportLibraryVersion"
+    implementation "com.android.support:recyclerview-v7:$rootProject.ext.supportLibraryVersion"
+    implementation "com.android.support:cardview-v7:$rootProject.ext.supportLibraryVersion"
+
+
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+
+
+    implementation 'com.google.android.ads.consent:consent-library:1.0.3'
+    implementation "com.android.support:design:$rootProject.ext.supportLibraryVersion"
+    implementation 'com.koushikdutta.ion:ion:2.1.9'
+    implementation "com.android.support:support-vector-drawable:$rootProject.ext.supportLibraryVersion"
+    implementation 'com.github.snowdream.android:smartimageview:0.0.2'
+    testImplementation 'junit:junit:4.12'
+   // implementation 'com.google.android.gms:play-services-ads:15.0.1'
+
+    implementation 'com.google.firebase:firebase-ads:15.0.1'
+    implementation 'com.google.firebase:firebase-core:16.0.0'
+    implementation 'com.google.firebase:firebase-messaging:17.0.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.7.0'
+    //implementation files('libs/UnityAdsAdapter.jar')
+    implementation "com.android.support:gridlayout-v7:$rootProject.ext.supportLibraryVersion"
+   // implementation fileTree(dir: 'libs', include: ['*.jar'])  // Vungle SDK
+    //implementation(name: 'VungleAdapter', 'ext': 'aar')  // Vungle Adapter for AdMob
+
+
+    implementation("com.vdopia.ads.lw:coresdk:2.5.5.1")
+    implementation("com.vdopia.ads.lw:adcolony-adapter:1.0.8")
+    implementation("com.vdopia.ads.lw:applovin-adapter:1.0.9")
+    implementation("com.vdopia.ads.lw:baidu-adapter:1.0.6")
+    implementation("com.vdopia.ads.lw:chartboost-adapter:1.0.8")
+    implementation("com.vdopia.ads.lw:facebook-adapter:1.0.6")
+    implementation("com.vdopia.ads.lw:google-adapter:1.1.0")
+    implementation("com.vdopia.ads.lw:inmobi-adapter:1.0.9")
+    implementation("com.vdopia.ads.lw:mopub-adapter:1.0.9")
+    implementation("com.vdopia.ads.lw:ogury-adapter:1.0.2")
+    implementation("com.vdopia.ads.lw:youappi-adapter:1.0.6")
+    implementation("com.vdopia.ads.lw:tapjoy-adapter:1.0.6")
+    implementation("com.vdopia.ads.lw:unity-adapter:1.1.0")
+    implementation("com.vdopia.ads.lw:vungle-adapter:1.0.6")
+    implementation("com.vdopia.ads.lw:yahoo-adapter:1.0.8")
+
+   implementation 'com.github.vungle:vungle-android-sdk:6.2.15'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.devbrackets.android:exomedia:4.0.3'
+    implementation 'com.adcolony:sdk:3.3.3'
+    implementation 'com.inmobi.monetization:inmobi-ads:7.1.0'
+    implementation 'com.applovin:applovin-sdk:8.0.0'
+    implementation 'com.flurry.android:ads:10.0.0'
+    implementation 'com.google.ads.interactivemedia.v3:interactivemedia:3.7.4'
+    implementation "com.youappi.sdk:youappi-sdk-android-moat:4.1.1"
+    implementation('com.mopub:mopub-sdk:4.19.0@aar') {
+        transitive = true
+        exclude module: 'libAvid-mopub'
+        exclude module: 'moat-mobile-app-kit'
+    }
+    implementation('com.facebook.android:audience-network-sdk:4.+') {
+        exclude group: 'com.google.android.exoplayer'
+    }
+
+    //google support and google play services libraries
+    implementation "com.google.android.gms:play-services-ads:$rootProject.ext.googlePlayServicesVersion" //11.0.4 at minimum is required, 15.0.1 or newer recommended!
+   // implementation "com.google.android.gms:play-services-gcm:15.0.1" //11.0.4 at minimum is required, 15.0.1 or newer recommended!
+    implementation "com.google.android.gms:play-services-gcm:$rootProject.ext.googlePlayServicesVersion"
+}
+
+
+
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                //You can use your own preferred version of Android Support Library
+                // this version must be the same throughout for all support libraries
+                details.useVersion("$rootProject.ext.supportLibraryVersion")
+            }
+        }
+    }
+}
+
+

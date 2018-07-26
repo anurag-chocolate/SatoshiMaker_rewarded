@@ -1,0 +1,48 @@
+<resources>
+    <dimen name="txtwelcome">20sp</dimen>
+    <dimen name="txtuser">15sp</dimen>
+    <dimen name="satoshi">20sp</dimen>
+    <dimen name="satoshiconseguido">15sp</dimen>
+
+    <dimen name="circularsize">100sp</dimen>
+    <dimen name="circularsizetop">-25dp</dimen>
+
+    <dimen name="ConseguirBitsize">10sp</dimen>
+    <dimen name="ReclaimBitsize">10sp</dimen>
+    <dimen name="margintopbotons">-20dp</dimen>
+    <dimen name="reclaimmarginright">200dp</dimen>
+    <dimen name="ConseguirmarginLeft">200dp</dimen>
+
+    <dimen name="editcaptchasize">15sp</dimen>
+    <dimen name="textcaptchasize">15sp</dimen>
+    <dimen name="margintopbotonscaptcha">10dp</dimen>
+    <dimen name="margintopbotonseditcaptcha">1dp</dimen>
+
+
+    <dimen name="infovideo">15sp</dimen>
+    <dimen name="frameLayoutwelcome">43sp</dimen>
+
+    *Ajustes*
+
+    <dimen name="ButtonSetBTC">15sp</dimen>
+    <dimen name="layout_heightboton">38dp</dimen>
+
+    *login*
+
+    <dimen name="usernamesignup">15sp</dimen>
+    <dimen name="passwordsignup">15sp</dimen>
+    <dimen name="emailsignup">15sp</dimen>
+    <dimen name="referidosignup">13sp</dimen>
+    <dimen name="layout_heighttab">20dp</dimen>
+
+    *Login*
+    <dimen name="correosoporte">50sp</dimen>
+    <dimen name="formulariosizelogin">15sp</dimen>
+    <dimen name="botonlogin">15sp</dimen>
+    <dimen name="iconlogin">35sp</dimen>
+    <dimen name="recordarcontra">15sp</dimen>
+    *singup*
+    <dimen name="formulariosizesigup">12sp</dimen>
+    <dimen name="botonsingup">15sp</dimen>
+    <dimen name="referidoedit">12sp</dimen>
+</resources>

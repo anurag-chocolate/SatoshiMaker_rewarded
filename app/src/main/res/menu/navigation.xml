@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_history"
+        android:icon="@drawable/history"
+        android:title="History"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/navigation_top"
+        android:icon="@drawable/top10"
+        android:title="Top 10"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/navigation_sorteo"
+        android:icon="@drawable/sorteos"
+        android:title="Raffle"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/navigation_message"
+        android:icon="@drawable/mail"
+        android:title="Mail Support"
+        app:showAsAction="ifRoom"/>
+
+</menu>

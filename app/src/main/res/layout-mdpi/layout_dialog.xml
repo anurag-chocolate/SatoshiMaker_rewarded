@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="@dimen/titulotip"
+        android:textStyle="bold"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:text="@string/dialogname" />
+    <ImageView
+        android:id="@+id/imagependiente"
+        android:layout_width="@dimen/imagentip"
+        android:layout_height="@dimen/imagentip"
+        android:src="@drawable/noenviado"
+        android:layout_below="@+id/title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <ImageView
+        android:id="@+id/imagencompleted"
+        android:layout_width="@dimen/imagentip"
+        android:layout_height="@dimen/imagentip"
+        android:src="@drawable/enviado"
+        android:layout_below="@+id/imagependiente"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:textSize="@dimen/destip"
+        android:id="@+id/txtpendiente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dialogtransaccionpending"
+        android:layout_toRightOf="@+id/imagependiente"
+        android:layout_above="@+id/imagencompleted"
+        android:layout_toEndOf="@+id/imagependiente" />
+    <TextView
+        android:textSize="@dimen/destip"
+        android:id="@+id/txtcompleted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dialogtransaccioncomplete"
+        android:layout_toRightOf="@+id/imagencompleted"
+        android:layout_alignBottom="@+id/imagencompleted"
+        android:layout_toEndOf="@+id/imagencompleted" />
+    <ImageView
+        android:id="@+id/imagencancel"
+        android:layout_width="@dimen/imagentip"
+        android:layout_height="@dimen/imagentip"
+        android:src="@drawable/cancel"
+        android:layout_below="@+id/txtcompleted"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:textSize="@dimen/destip"
+        android:id="@+id/txtcancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dialogtransaccioncancel"
+        android:layout_toRightOf="@+id/imagencancel"
+        android:layout_alignBottom="@+id/imagencancel"
+        android:layout_toEndOf="@+id/imagencancel" />
+</RelativeLayout>

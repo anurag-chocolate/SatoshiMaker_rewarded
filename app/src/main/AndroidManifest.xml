@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.juan.pruebaaplicaciones">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.badwolf.satoshimaker.permission.C2D_MESSAGE" />
+
+
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+
+        <meta-data android:name="app_license" android:value="8e030d10d255c3a16189438fa36be07c"/>
+
+        <provider android:name="com.duapps.ad.stats.DuAdCacheProvider"
+            android:authorities="${applicationId}.DuAdCacheProvider" android:exported="false"/>
+
+        <activity
+            android:name=".Welcome"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_welcome"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".History"
+            android:label="@string/title_activity_history"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateUnchanged|stateHidden|stateAlwaysHidden|stateAlwaysVisible|adjustPan|adjustNothing">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.juan.pruebaaplicaciones.Welcome" />
+        </activity>
+        <activity
+            android:name=".Top"
+            android:label="@string/title_activity_Top"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateUnchanged|stateHidden|stateAlwaysHidden|stateAlwaysVisible|adjustPan|adjustNothing">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.juan.pruebaaplicaciones.Welcome" />
+        </activity>
+
+        <service
+            android:name="com.evernote.android.job.gcm.PlatformGcmService"
+            tools:node="remove"/>
+
+
+
+    </application>
+
+
+
+</manifest>

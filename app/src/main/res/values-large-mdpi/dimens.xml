@@ -1,0 +1,110 @@
+<resources>
+    <dimen name="txtwelcome">40sp</dimen>
+    <dimen name="txtuser">30sp</dimen>
+    <dimen name="satoshi">40sp</dimen>
+    <dimen name="satoshiconseguido">30sp</dimen>
+
+    <dimen name="circularsize">240sp</dimen>
+
+    <dimen name="ConseguirBitsize">25sp</dimen>
+    <dimen name="ReclaimBitsize">25sp</dimen>
+    <dimen name="margintopbotons">30dp</dimen>
+    <dimen name="reclaimmarginright">290dp</dimen>
+    <dimen name="ConseguirmarginLeft">320dp</dimen>
+
+    <dimen name="editcaptchasize">30sp</dimen>
+    <dimen name="textcaptchasize">30sp</dimen>
+    <dimen name="margintopbotonscaptcha">10dp</dimen>
+    <dimen name="margintopbotonseditcaptcha">1dp</dimen>
+
+    <dimen name="infovideo">30sp</dimen>
+    <dimen name="frameLayoutwelcome">84sp</dimen>
+
+    *invitefriends*
+    <dimen name="icon">200sp</dimen>
+    <dimen name="antuser">25sp</dimen>
+    <dimen name="user">40sp</dimen>
+    <dimen name="desuser">25sp</dimen>
+    <dimen name="desuser2">25sp</dimen>
+    <dimen name="botoninvite">40sp</dimen>
+
+    *Login*
+    <dimen name="correosoporte">70sp</dimen>
+    <dimen name="formulariosizelogin">35sp</dimen>
+    <dimen name="botonlogin">35sp</dimen>
+    <dimen name="iconlogin">50sp</dimen>
+    <dimen name="recordarcontra">30sp</dimen>
+    *singup*
+    <dimen name="formulariosizesigup">35sp</dimen>
+    <dimen name="botonsingup">35sp</dimen>
+    <dimen name="referidoedit">20sp</dimen>
+
+    *historial*
+    <dimen name="imagenhistorial">100dp</dimen>
+    <dimen name="ammounthistorial">26dp</dimen>
+    <dimen name="datehistorial">20dp</dimen>
+    <dimen name="descriphistorial">20dp</dimen>
+
+    *historialTotal*
+    <dimen name="imagenhistorialtotal">120dp</dimen>
+    <dimen name="userthistorialtotal">28dp</dimen>
+    <dimen name="ammounthistorialtotal">22dp</dimen>
+
+    *topreferido*
+    <dimen name="topreferidoid">50dp</dimen>
+    <dimen name="topreferidouser">36dp</dimen>
+    <dimen name="topreferidonumer">36dp</dimen>
+
+    *topsatoshis*
+    <dimen name="topsatoshisid">50dp</dimen>
+    <dimen name="topsatoshisuser">36dp</dimen>
+    <dimen name="topsatoshinumer">36dp</dimen>
+
+    *captcha*
+    <dimen name="editcaptcha">26sp</dimen>
+    <dimen name="butonrefreshcaptcha">28sp</dimen>
+    <dimen name="butonsendcaptcha">28sp</dimen>
+
+    *tips*
+    <dimen name="imagentip">45sp</dimen>
+    <dimen name="titulotip">45sp</dimen>
+    <dimen name="destip">28sp</dimen>
+
+    *infopayments*
+    <dimen name="tituloinfopayments">30sp</dimen>
+    <dimen name="desinfopayments">24sp</dimen>
+
+    *inforeferido*
+    <dimen name="inforeferido">20sp</dimen>
+
+    *likelink*
+    <dimen name="botonlike">40sp</dimen>
+
+    *newversion*
+    <dimen name="botonversion">34sp</dimen>
+    <dimen name="descripversion">35sp</dimen>
+    <dimen name="newversionversion">50sp</dimen>
+
+    *notificacion*
+    <dimen name="titulonoti">30sp</dimen>
+    <dimen name="desnoti">20sp</dimen>
+
+    *contraseña*
+    <dimen name="titlecontraseña">25sp</dimen>
+    <dimen name="editcontraseña">34sp</dimen>
+    <dimen name="buttoncontraseña">34sp</dimen>
+
+    *retirar*
+    <dimen name="tituloretirar">30sp</dimen>
+    <dimen name="descripretirar">24sp</dimen>
+    <dimen name="botonretirar">34sp</dimen>
+
+    *setbtc*
+    <dimen name="titulosetbtc">45sp</dimen>
+    <dimen name="emailsetbtc">25sp</dimen>
+    <dimen name="botonsetbtc">35sp</dimen>
+
+    *spinner*
+    <dimen name="titulospinner">30sp</dimen>
+
+</resources>

@@ -1,0 +1,5 @@
+<resources>
+    <integer name="circulartxtsize">40</integer>
+    <integer name="circularsubtxtsize">30</integer>
+    <integer name="circularstrok">10</integer>
+</resources>

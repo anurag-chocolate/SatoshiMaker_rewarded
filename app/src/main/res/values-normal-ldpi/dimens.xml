@@ -1,0 +1,24 @@
+<resources>
+    <dimen name="txtwelcome">25sp</dimen>
+    <dimen name="txtuser">18sp</dimen>
+    <dimen name="satoshi">25sp</dimen>
+    <dimen name="satoshiconseguido">18sp</dimen>
+
+    <dimen name="circularsize">120sp</dimen>
+
+    <dimen name="ConseguirBitsize">12sp</dimen>
+    <dimen name="ReclaimBitsize">12sp</dimen>
+    <dimen name="margintopbotons">-5dp</dimen>
+    <dimen name="reclaimmarginright">200dp</dimen>
+    <dimen name="ConseguirmarginLeft">200dp</dimen>
+
+    <dimen name="editcaptchasize">20sp</dimen>
+    <dimen name="textcaptchasize">20sp</dimen>
+    <dimen name="margintopbotonscaptcha">10dp</dimen>
+    <dimen name="margintopbotonseditcaptcha">1dp</dimen>
+
+
+    <dimen name="infovideo">20sp</dimen>
+    <dimen name="frameLayoutwelcome">55sp</dimen>
+
+</resources>

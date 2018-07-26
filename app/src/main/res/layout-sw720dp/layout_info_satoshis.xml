@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:text="@string/titleinfoUser" />
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:id="@+id/titleinfosatoberrys"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/title"
+        android:text="@string/titleinfosatoberrys" />
+
+    <TextView
+        android:textSize="35sp"
+        android:id="@+id/requested"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/satoberrys"
+        android:layout_below="@+id/titleinfosatoberrys"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"  />
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="ggg"
+        android:layout_toRightOf="@+id/requested"
+        android:layout_alignBaseline="@+id/requested"
+        android:layout_alignBottom="@+id/requested"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:textSize="35sp"
+        android:id="@+id/requested2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/satoberrysminwithdaw"
+        android:layout_below="@+id/requested"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"  />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:textSize="35sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/requested2"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/requested2"
+        android:layout_toRightOf="@+id/requested2"
+        android:text="ggg"
+        android:textStyle="bold" />
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:id="@+id/titleinfosatoshis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/requested2"
+        android:text="@string/titleinfosatoshis" />
+
+    <TextView
+        android:textSize="35sp"
+        android:id="@+id/satoshis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Satoshis"
+        android:layout_below="@+id/titleinfosatoshis"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"  />
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="ggg"
+        android:layout_toRightOf="@+id/satoshis"
+        android:layout_alignBaseline="@+id/satoshis"
+        android:layout_alignBottom="@+id/satoshis"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:textSize="35sp"
+        android:id="@+id/minsatoshis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/satoberrysminwithdaw"
+        android:layout_below="@+id/satoshis"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"  />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:textSize="35sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/minsatoshis"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/minsatoshis"
+        android:layout_toRightOf="@+id/minsatoshis"
+        android:text="ggg"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:textSize="35sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/infosatoshis"
+        android:layout_below="@+id/minsatoshis"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

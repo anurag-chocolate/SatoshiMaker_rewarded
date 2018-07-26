@@ -1,0 +1,4 @@
+<resources>
+    <integer name="left">1</integer>
+    <integer name="right">2</integer>
+</resources>
